@@ -4,6 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  position: relative;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.04em;
   font-size: 16px;
@@ -20,7 +21,7 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 

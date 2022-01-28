@@ -35,7 +35,7 @@ export default class ApiService {
             .catch(error => console.error(error))
     }
 
-    async getFilmsDetails(id) {
+    async getFilmDetails(id) {
         return await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${this._apiKey}`)
             .then(response => response.json())
             .catch(error => console.error(error))

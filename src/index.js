@@ -23,8 +23,10 @@ const closeModal = () => {
 }
 
 const openModal = (id) => {
+    
     refs.modal.classList.remove('hidden')
-    apiService.getFilmsDetails(id).then(renderService.renderFilmDetails)
+    apiService.getFilmDetails(id).then(renderService.renderFilmDetails)
+
     refs.modal.addEventListener('click', e => {
         if (e.target.dataset.action === 'close') {
             closeModal()
@@ -56,3 +58,4 @@ const getDetails = (e) => {
     }
 
 window.addEventListener('load', getPopular)
+refs.list.addEventListener('click', getDetails)

@@ -1,6 +1,7 @@
 .gallery-block {
     margin-top: 40px;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .list {
@@ -14,4 +15,8 @@
         margin-right: 30px;
         margin-top: 30px;
     }
+}
+
+.item__img {
+    border-radius: 5px;
 }
